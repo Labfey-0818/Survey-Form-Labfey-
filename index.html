@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" id="survey-form">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey for your college department</p>
+            <div class="content">
+                <div class="input-box">
+                    <label id="name-label" for="name">Full name </label>
+                    <input id="name" type="text" placeholder="Enter full name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label id="email-label" for="name">Email </label>
+                    <input id="email" type="email" placeholder="Enter Email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="ID_number">Id number </label>
+                    <input type="text" placeholder="Enter ID Number" name="ID_number" required>
+                </div>
+                
+                <!--Survey Questions-->
+                <div class="input-box">
+                <label id="number-label" for="age">Age: </label>
+                <input  type="number" id="number" min="18" max="99" placeholder="Enter your age" required>
+                </div>
+                <span class="titledis">Gender</span>
+                <div class="radio-group">
+
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <span class="titledis">What is your College Department?</span>
+            <div class="input-box">
+                <label for="">
+                    <select name="" id="dropdown">
+                        <option disabled selected>Select current department</option>
+                    <option value="">Criminal Justice Education</option>
+                    <option value="">Information Technology and Computer Science</option>
+                    <option value="">Teacher Education</option>
+                    <option value="">Accountacy</option>
+                    <option value="">Teacher Education</option>
+                    <option value="">Arts and Sciences</option>
+                    <option value="">Business Administration</option>
+                    <option value="">Engineering and Architechture</option>
+                    <option value="">Hospitality and Tourism Management</option>
+                    <option value="">Nursing</option>
+                    <option value="">Law</option>
+                    </select>
+                </label>
+            </div>
+
+            <span class="titledis">Preffered Learning Methods</span>
+            <div class="pref">
+                <input type="checkbox" id="visual" name="learning-methods" value="visual">
+                <label for="Visual">Visual</label>
+            </div>
+            <div>
+                <input type="checkbox" id="auditory" name="learning-methods" value="visual">
+                <label for="Auditory">Auditory</label>
+            </div>
+            <div>
+                <input type="checkbox" id="kinesthetic" name="learning-methods" value="visual">
+                <label for="Kinesthetic">Kinesthetic</label>
+            </div>
+            
+                <span class="titledis">How is your current course college experience?</span>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="rating" value="Great">
+                    <label for="great">Great</label>
+                    <input type="radio" id="female" name="rating" value="Good">
+                    <label for="good">Good</label>
+                    <input type="radio" id="other" name="rating" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div>
+                    <p>What are the reccomendations for your college department?</p>
+                    <textarea name="comments" id="5" cols="50"></textarea>
+                </div>
+                <div>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+        </form>
+
+        
+    </div>
+
+</body>
+</html>
